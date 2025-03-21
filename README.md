@@ -16,7 +16,7 @@ Module 9. LG전자 및 해커톤 문제 소개: LG전자 B2B 마케팅 및 데�
 
 Binary classification: 전통 ML or 최신 DL
 
-1. Rogistic Regression은 목적변수가 0 or 1 로 주어지는 binary classification 을 해결하는 데 최적화되어 있다.
-   x값의 특정 임계점에서 y값이 변하는 경우, 즉 독립변수가 비선형적으로 영향을 미칠 때
+Rogistic Regression은 목적변수가 0 or 1 로 주어지는 binary classification 을 해결하는 데 최적화되어 있다.
+x값의 특정 임계점에서 y값이 변하는 경우, 즉 독립변수가 비선형적으로 영향을 미칠 때
 y = 1, 실제 고객 
 y = 0, otherwise
