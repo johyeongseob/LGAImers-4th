@@ -51,10 +51,13 @@ This phase focused on applying supervised learning methods to solve a practical 
 
 This repository contains a machine learning pipeline for a binary classification task using customer data. It utilizes various ensemble and individual classifiers such as Decision Trees, Random Forest, XGBoost, LightGBM, and more.
 
-### 📁 Dataset
+### 📁 Dataset (Private)  
+Source: [https://lgaimers.ai/](https://lgaimers.ai/)
 
-- `train.csv`: Training dataset including customer features and a target label (e.g., success/failure of a campaign).
-- `submission.csv`: Test dataset with the same features but without labels, used for final prediction.
+- `train.csv`: Training dataset containing customer features and a target label (e.g., success/failure of a campaign).
+- `submission.csv`: Test dataset with the same structure but without labels, used for generating final predictions.
+
+> 📌 Note: The dataset is proprietary and not publicly available.
 
 ### 🧹 Preprocessing
 
@@ -66,3 +69,20 @@ This repository contains a machine learning pipeline for a binary classification
    - Categorical (object) columns are encoded using a custom label encoding function.
    - Optionally, object-type columns can be dropped (code commented out).
 
+### 🧠 Models Used
+
+The following machine learning models were used and compared for the classification task:
+
+- `DecisionTreeClassifier`
+- `SVC` (Support Vector Classifier)
+- `AdaBoostClassifier`
+- `GradientBoostingClassifier`
+- `XGBClassifier` (XGBoost)
+- `SGDClassifier` (Stochastic Gradient Descent)
+- `LGBMClassifier` (LightGBM)
+- `RandomForestClassifier`
+- `LogisticRegression`
+- `VotingClassifier` (for ensemble learning)
+- Basic `MLP` (Multi-Layer Perceptron)
+
+These models were evaluated to determine the most effective approach for the given dataset.
