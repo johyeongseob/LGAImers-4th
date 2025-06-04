@@ -66,6 +66,3 @@ This repository contains a machine learning pipeline for a binary classification
    - Categorical (object) columns are encoded using a custom label encoding function.
    - Optionally, object-type columns can be dropped (code commented out).
 
-```python
-def label_encoding(series: pd.Series) -> pd.Series:
-    # Converts categorical data to numerical using label encoding
