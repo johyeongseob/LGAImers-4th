@@ -1,33 +1,71 @@
 # LGAImers 4th
 
-Phase 1: AI 필수과정 강의 학습
+## 📘 Phase 1: Foundational AI Curriculum
 
-Module 1. AI 윤리
+This phase covered a wide range of essential AI concepts, from mathematical foundations to advanced deep learning techniques.
 
-Module 2. 선형대수: 고윳값 분해, 특이값 분해
+### ✅ Course Modules
 
-Module 3. Machine Learning
+- **Module 1. AI Ethics**  
+  Ethical considerations in the development and use of artificial intelligence.
 
-Module 4. 지도학습: Regression, classification
+- **Module 2. Linear Algebra**  
+  Topics included eigenvalue decomposition and singular value decomposition.
 
-Module 5. 인과추론: 마르코프 모델
+- **Module 3. Introduction to Machine Learning**  
+  Basic concepts and representative algorithms in machine learning.
 
-Module 6 딥러닝: CNN, classification(Alexnet, VGG, ResNet), RNN(seq2seq, attention, transfer, pre-trained model)
+- **Module 4. Supervised Learning**  
+  Regression and classification methods.
 
-Phase 2: 지도학습 중 '분류문제'
+- **Module 5. Causal Inference**  
+  Understanding causality using Markov models and related techniques.
 
-Module 7. B2B 마케팅: B2B 시장에 대한 이해, 고객가치와 가격, 가치 획득
+- **Module 6. Deep Learning Fundamentals**  
+  - CNNs for image classification: AlexNet, VGG, ResNet  
+  - RNNs and NLP: seq2seq, attention mechanisms, transfer learning, pre-trained models
 
-Module 8. B2B 고객데이터 기반 예측 단서 스코어링 모델: B2B 고객 행동 예측 방법론, 고객에게 최적의 상품을 제시하는 추천 알고리즘, 로지스틱 회귀분석과 인공신경망 (ANN)
+---
 
-Module 9. LG전자 및 해커톤 문제 소개: LG전자 B2B 마케팅 및 데이터 분석 소개, LG전자 해커톤 문제 소개
+## 📊 Phase 2: Supervised Learning – Classification Task
 
-Binary classification: 전통 ML or 최신 DL
+This phase focused on applying supervised learning methods to solve a practical classification problem using B2B customer data.
 
-Rogistic Regression은 목적변수가 0 or 1 로 주어지는 binary classification 을 해결하는 데 최적화되어 있다.
+### ✅ Practical Modules
 
-x값의 특정 임계점에서 y값이 변하는 경우, 즉 독립변수가 비선형적으로 영향을 미칠 때
+- **Module 7. Introduction to B2B Marketing**  
+  Understanding B2B markets, customer value, pricing, and value capture.
 
-y = 1, 실제 고객 
+- **Module 8. Predictive Scoring Model Based on B2B Customer Data**  
+  - Techniques for predicting B2B customer behavior  
+  - Recommendation algorithms  
+  - Logistic regression and artificial neural networks (ANNs)
 
-y = 0, otherwise
+- **Module 9. LG Electronics Case & Hackathon Overview**  
+  - Introduction to LG Electronics' B2B marketing and analytics challenges  
+  - Overview of the hackathon task and problem definition
+
+---
+
+## 💻 Code: Multi-Model Defect Classification
+
+This repository contains a machine learning pipeline for a binary classification task using customer data. It utilizes various ensemble and individual classifiers such as Decision Trees, Random Forest, XGBoost, LightGBM, and more.
+
+### 📁 Dataset
+
+- `train.csv`: Training dataset including customer features and a target label (e.g., success/failure of a campaign).
+- `submission.csv`: Test dataset with the same features but without labels, used for final prediction.
+
+### 🧹 Preprocessing
+
+1. **Missing Values Handling**
+   - Missing values are filled with 0.
+   - An alternative method (backfill) is also included but commented out.
+
+2. **Categorical Data Encoding**
+   - Categorical (object) columns are encoded using a custom label encoding function.
+   - Optionally, object-type columns can be dropped (code commented out).
+
+```python
+def label_encoding(series: pd.Series) -> pd.Series:
+    # Converts categorical data to numerical using label encoding
