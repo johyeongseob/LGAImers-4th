@@ -1,4 +1,4 @@
-# LGAImers_4th
+# LGAImers 4th
 
 Phase 1: AI 필수과정 강의 학습
 
