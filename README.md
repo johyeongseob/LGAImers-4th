@@ -86,3 +86,8 @@ The following machine learning models were used and compared for the classificat
 - Basic `MLP` (Multi-Layer Perceptron)
 
 These models were evaluated to determine the most effective approach for the given dataset.
+
+## 🏅 Certificate of Completion
+
+![Certificate](images/certificate.png)
+
