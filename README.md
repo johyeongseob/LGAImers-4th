@@ -55,5 +55,5 @@ These models were evaluated to determine the most effective approach for the giv
 
 ## 🏅 Certificate of Completion
 
-![Certificate](images/certificate.png)
+<img src="images/certificate.png" alt="Certificate" style="width:50%;">
 
