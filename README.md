@@ -1,4 +1,4 @@
-# 🚀 LGAimers 4th Summary (Markdown)
+# 🚀 LGAimers 4th
 
 **LGAimers** is an AI training and hackathon program hosted by **LG Electronics**, focusing on both theory and practical application.
 
